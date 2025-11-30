@@ -1,83 +1,71 @@
-[README.md](https://github.com/user-attachments/files/23840136/README.md)
-# EduPlus - Plataforma de Educación Online
+# EduPlus - Online Education Platform
 
-**EduPlus** es una plataforma completa de educación online desarrollada
-con **Next.js 15**, **React 19**, **TypeScript** y **Firebase**, pensada
-para gestionar cursos, usuarios y contenido educativo de forma escalable
-y moderna.
+**EduPlus** is a complete online education platform built with **Next.js 15**, **React 19**, **TypeScript**, and **Firebase**, designed to manage courses, users, and educational content in a scalable and modern way.
 
-## ✨ Características principales
+## ✨ Main Features
 
--   📚 **Catálogo de cursos** con búsqueda, filtros y paginación
--   👤 **Sistema de usuarios** con registro, login y perfiles
-    personalizados
--   🛠️ **Panel de administración** para gestionar cursos y usuarios
--   ✅ **Seguimiento de progreso**: módulos con videos, PDFs y estado de
-    avance
--   ⭐ **Sistema de favoritos**: cada usuario puede guardar cursos
-    preferidos
--   💬 **Comentarios y calificaciones** por curso
--   📱 **Diseño responsivo**, optimizado para escritorio, tablet y móvil
+- 📚 **Course catalog** with search, filters, and pagination
+- 👤 **User system** with registration, login, and personalized profiles
+- 🛠️ **Admin dashboard** for managing courses and users
+- ✅ **Progress tracking:** modules with videos, PDFs, and completion status
+- ⭐ **Favorites system:** users can save preferred courses
+- 💬 **Comments and course ratings**
+- 📱 **Responsive design**, optimized for desktop, tablet, and mobile
 
-## 🧰 Tecnologías
+## 🧰 Tech Stack
 
--   **Frontend:** Next.js 15, React 19, TypeScript\
--   **Estilos:** Tailwind CSS, shadcn/ui, Radix UI\
--   **Backend:** Next.js API Routes, Firebase\
--   **Base de datos:** Firebase Firestore\
--   **Autenticación:** Firebase Auth\
--   **Storage:** Firebase Storage
+- **Frontend:** Next.js 15, React 19, TypeScript
+- **UI:** Tailwind CSS, shadcn/ui, Radix UI
+- **Backend:** Next.js API Routes, Firebase
+- **Database:** Firebase Firestore
+- **Authentication:** Firebase Auth
+- **Storage:** Firebase Storage
 
-## 🚀 Instalación
+## 🚀 Installation
 
-1.  **Clonar el repositorio**
-
-``` bash
-git clone <URL_DEL_REPO>
+1. **Clone the repository**
+```bash
+git clone <REPO_URL>
 cd eduplus-platform
 ```
 
-2.  **Instalar dependencias**
-
-``` bash
+2. **Install dependencies**
+```bash
 npm install
 ```
 
-3.  **Configurar variables de entorno**
+3. **Configure environment variables**
 
-Crear un archivo `.env.local` en la raíz del proyecto con la
-configuración de Firebase y NextAuth.
+Create a `.env.local` file in the root of the project containing your Firebase and NextAuth configuration.
 
-⚠️ **Importante:** el archivo `.env.local` **no debe subirse** a GitHub.
+⚠️ **Important:** `.env.local` **must not** be pushed to GitHub.
 
-4.  **Ejecutar en desarrollo**
-
-``` bash
+4. **Run the development server**
+```bash
 npm run dev
 ```
 
-5.  **Build para producción**
-
-``` bash
+5. **Build for production**
+```bash
 npm run build
 npm start
 ```
 
-## ☁️ Despliegue en Vercel
+## ☁️ Deployment on Vercel
 
--   Deployment automático desde GitHub\
--   Variables de entorno configuradas en el panel\
--   CDN global + SSL automático
+- Automatic deployment from GitHub
+- Environment variables configured in the project dashboard
+- Global CDN + automatic SSL
 
-## 📂 Estructura del proyecto
+## 📂 Project Structure
 
-``` text
+```text
 app/
   admin/
   api/
   auth/
-  cursos/
-  perfil/
+  courses/
+  profile/
   page.tsx
 
 components/
@@ -88,32 +76,32 @@ public/
 styles/
 ```
 
-## 🔐 Seguridad
+## 🔐 Security
 
--   Variables de entorno para credenciales\
--   Firebase Admin solo en servidor\
--   NextAuth con secretos seguros\
--   Revisión de claves antes de cada commit
+- Environment variables for all sensitive credentials
+- Firebase Admin available only on the server
+- Secure NextAuth configuration
+- Key and secret verification before commits
 
-## 🗄️ Base de datos
+## 🗄️ Database
 
--   `cursos`
--   `users`
--   Subcolecciones: progreso, favoritos, cursos completados
+- `courses`
+- `users`
+- Subcollections: progress, favorites, completed courses
 
 ## 🧪 Scripts
 
-``` bash
+```bash
 npm run dev
 npm run build
 npm run start
 npm run lint
 ```
 
-## 📜 Licencia
+## 📜 License
 
-Proyecto bajo licencia **MIT**.
+This project is licensed under the **MIT** license.
 
-## 🆘 Soporte
+## 🆘 Support
 
-Abrir issues en el repositorio para consultas o reportes.
+Open issues in the repository for questions or bug reports.
